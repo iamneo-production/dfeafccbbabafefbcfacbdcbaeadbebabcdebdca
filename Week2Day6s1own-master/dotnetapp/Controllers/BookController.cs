@@ -29,10 +29,10 @@ namespace dotnetapp.Controllers
         //     return View("Index", books);
         // }
 
-        // public IActionResult TotalCount()
-        // {
-        //     int totalCount = _context.Books.Count();
-        //     return Content($"Total number of books: {totalCount}");
-        // }
+        public IActionResult TotalCount()
+        {
+            int totalCount = _context.Books.Count();
+            return Content($"Total number of books: {totalCount}");
+        }
     }
 }

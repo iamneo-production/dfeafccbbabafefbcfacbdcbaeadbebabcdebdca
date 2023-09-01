@@ -60,7 +60,7 @@ namespace dotnetapp.Tests
         }
 
         [Test]
-        public void CreateBook_AddsBookToDatabase()
+        public void Testing_CreateBook_AddsBookToDatabase()
         {
             // Arrange
             var book = new Book { Id = 1, Title = "demo", Author = "demo", Price = 100, Quantity = 5};

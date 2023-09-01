@@ -18,6 +18,8 @@ namespace dotnetapp.Controllers
         public IActionResult Index()
         {
             List<Book> books = _context.Books.ToList();
+            int totalCount = _context.Books.Count();
+    ViewBag.TotalCount = totalCount; 
             return View(books);
         }
 
